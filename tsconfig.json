@@ -11,6 +11,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ngx-sortable213": [
+        "dist/ngx-sortable213/ngx-sortable213",
+        "dist/ngx-sortable213"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
@@ -21,7 +27,8 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

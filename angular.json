@@ -105,6 +105,37 @@
           }
         }
       }
+    },
+    "ngx-sortable213": {
+      "projectType": "library",
+      "root": "projects/ngx-sortable213",
+      "sourceRoot": "projects/ngx-sortable213/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-sortable213/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-sortable213/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-sortable213/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-sortable213/src/test.ts",
+            "tsConfig": "projects/ngx-sortable213/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-sortable213/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "library13"

@@ -1,0 +1,30 @@
+{
+  "name": "ngx-sortable213",
+  "description": "Angular sortablejs bindings.",
+  "version": "0.0.1",
+  "scripts": {
+    "watch": "ng build ngx-sortable213 --configuration \"development\" --watch",
+    "build": "ng build ngx-sortable213 --configuration \"production\"",
+    "lint": "ng lint ngx-sortable213",
+    "lint:fix": "yarn lint --fix",
+    "_lint:html": "js-beautify --type html -r -f ./src/**/*.html --config ./js-beautify.json",
+    "_lint:sass": "stylelint \"src/**/*.scss\"",
+    "_lint:sass:fix": "yarn lint:sass --fix",
+    "test": "ng test ngx-sortable213 --no-watch",
+    "test:watch": "ng test ngx-sortable213",
+    "docs": "npx compodoc -c .compodocrc.json",
+    "docs:json": "yarn docs --exportFormat json --output ../demo/src/app/ngx-sortable213"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0",
+    "sortablejs": "^1.15.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/sortablejs": "1.15.1"
+  },
+  "license": "MIT"
+}
